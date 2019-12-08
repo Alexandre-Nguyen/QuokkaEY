@@ -1,0 +1,29 @@
+
+<br />
+<div class="row h-25">
+    <div class="col-12">
+        <h1>QUOKKA Break</h1>
+        <h3>{{ QDate | date: 'shortTime'}}</h3>
+        <h3>{{ QDate | date: 'mediumDate'}}</h3>
+    </div>
+</div>
+<br />
+
+<div class="row h-50">
+    <div class="col"></div>
+    <div id="ticket" class="col">
+        <h1>{{ Task.title }}</h1>
+        <br /><br />
+        <h2>{{ Task.category }}</h2>
+        <h2>{{ Task.hashtag }}</h2>
+    </div>
+    <div class="col"></div>
+</div>
+<br />
+<div class="row h-25">
+    <div class="col-12">
+        <button routerLink= ''>EXIT</button>
+        <button (click)="generatePdf()">PRINT</button>
+    </div>
+</div>
+
