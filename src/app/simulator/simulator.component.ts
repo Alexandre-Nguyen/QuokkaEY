@@ -52,7 +52,6 @@ export class SimulatorComponent implements OnInit {
           },
           {
             text: 'QUOKKA Break',
-            font: 'Merchant',
             bold: true,
             fontSize: 12,
             alignment: 'center',
