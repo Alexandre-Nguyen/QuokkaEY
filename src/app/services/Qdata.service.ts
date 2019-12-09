@@ -93,22 +93,22 @@ export class QDataService {
 
         {
             title : 'Think about a word and make someone guessing it',
-            hashtag : '#BETACOFEEE',
+            hashtag : '#BETACOFFEE',
             category : 'Playing A Game'
         },
         {
             title : 'Guess the numeric sequence 2 3 _  13 Choose between 6 7 10 11',
-            hashtag : '#BETACOFEEE',
+            hashtag : '#BETACOFFEE',
             category : 'Playing A Game'
         },
         {
             title : 'Play Tic Tac Toe',
-            hashtag : '#BETACOFEEE',
+            hashtag : '#BETACOFFEE',
             category : 'Playing A Game'
         },
         {
             title : 'A wick burns in one hour, but irregularly. How to measure half an hour?',
-            hashtag : '#BETACOFEEE',
+            hashtag : '#BETACOFFEE',
             category : 'Playing A Game'
         },
 

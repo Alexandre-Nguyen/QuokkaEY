@@ -4,12 +4,12 @@
     <div class="col"></div>
     <div class="col">
         <img id="QbackGround"src="./assets/QUOKKASimulator_background.png" class="img-responsive">
-        <img id="btn1" src="./assets/ButtonMove.png" class="img-responsive" [routerLink]="['ticket', 1]">
-        <img id="btn2" src="./assets/ButtonFunfact.png" class="img-responsive" [routerLink]="['ticket', 2]">
-        <img id="btn3" src="./assets/ButtonBetacofee.png" class="img-responsive" [routerLink]="['ticket', 3]">
-        <img id="btn4" src="./assets/ButtonRefresh.png" class="img-responsive"[routerLink]="['ticket', 4]">
-        <img id="btn5" src="./assets/ButtonTalkTo.png" class="img-responsive"[routerLink]="['ticket', 5]">
-        <img id="btn6" src="./assets/ButtonRandom.png" class="img-responsive"[routerLink]="['ticket', 6]">
+        <img id="btn1" src="./assets/ButtonMove.png" class="img-responsive" (click)="getTicket(1)">
+        <img id="btn2" src="./assets/ButtonFunfact.png" class="img-responsive" (click)="getTicket(2)">
+        <img id="btn3" src="./assets/ButtonBetacofee.png" class="img-responsive" (click)="getTicket(3)">
+        <img id="btn4" src="./assets/ButtonRefresh.png" class="img-responsive" (click)="getTicket(4)">
+        <img id="btn5" src="./assets/ButtonTalkTo.png" class="img-responsive" (click)="getTicket(5)">
+        <img id="btn6" src="./assets/ButtonRandom.png" class="img-responsive"(click)="getTicket(6)">
     </div>
     <div class="col"></div>
 </div>

@@ -6,6 +6,7 @@ import { SimulatorComponent } from './simulator/simulator.component';
 import { TicketComponent } from './ticket/ticket.component';
 import { QDataService } from './services/Qdata.service';
 import { Routes, RouterModule } from '@angular/router'
+import { DatePipe } from '@angular/common';
 
 const appRoutes: Routes = [
   { path : '', component: SimulatorComponent},
@@ -22,7 +23,7 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [QDataService],
+  providers: [QDataService, DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
