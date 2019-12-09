@@ -112,9 +112,9 @@ export class SimulatorComponent implements OnInit {
     if (this.Task.title.length > 45)
       documentDefinition.content[6].fontSize = 16;
 
-    pdfMake.createPdf(documentDefinition).open({}, window);
+    //pdfMake.createPdf(documentDefinition).open({}, window);
     //pdfMake.createPdf(documentDefinition).open();
-    //pdfMake.createPdf(documentDefinition).download();
+    pdfMake.createPdf(documentDefinition).download();
   }
 
   setTaskTab(id : number){
