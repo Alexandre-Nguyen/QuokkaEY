@@ -3,8 +3,7 @@ import { Router } from '@angular/router';
 import { DatePipe } from '@angular/common';
 import { QDataService } from '../services/Qdata.service';
 import * as pdfMake from 'pdfmake/build/pdfmake';
-//import * as pdfFonts from 'pdfmake/build/vfs_fonts';
-import * as pdfFonts from './vfs_fonts'
+import * as pdfFonts from './vfs_fonts.js';
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 @Component({
@@ -55,7 +54,6 @@ export class SimulatorComponent implements OnInit {
     };
 
     const documentDefinition = { 
-      
       defaultStyle: {
         //font: 'Roboto'
         font: 'Merchant Copy Doublesize'
@@ -77,52 +75,59 @@ export class SimulatorComponent implements OnInit {
             bold: true,
             fontSize: 12,
             alignment: 'center',
-            margin: [0, 15],
+            margin: [0, 15]
           },
           {
             text: this.PDate.transform(this.QDate, "HH:mm"),
+            //fontSize: 14,
             fontSize: 12,
             alignment: 'center',
-            margin: [0, 30],
+            margin: [0, 30]
           },
           {
             text: this.PDate.transform(this.QDate, "EEEE, dd LLLL"),
+            //fontSize: 13,
             fontSize: 11,
             alignment: 'center',
-            margin: [0, -30],
+            margin: [0, -30]
           },
           {
             text: "Fjord Paris",
+            //fontSize: 13,
             fontSize: 11,
             alignment: 'center',
-            margin: [0, 30],
+            margin: [0, 30]
           },
           {
             text: "@User-test",
+            //fontSize: 13,
             fontSize: 11,
             alignment: 'center',
-            margin: [0, -30],
+            margin: [0, -30]
           },
           {
             text: this.Task.title,
+            //fontSize: 25,
             fontSize: 20,
             alignment: 'center',
-            margin: [0, 70],
+            margin: [0, 70]
           },
           {
             text: this.Task.hashtag,
+            //fontSize: 15,
             fontSize: 11,
             alignment: 'center',
-            margin: [0, -20],
+            margin: [0, -20]
           },
           {
             qr: "http://quokka.mystrikingly.com",
             fit: 50,
             alignment: 'center',
-            margin: [0, 60],
+            margin: [0, 60]
           },
           {
             text: "Share and submit your own break on Quokka.com",
+            //fontSize: 13,
             fontSize: 10,
             alignment: 'center',
             margin: [0, -30]
@@ -130,9 +135,13 @@ export class SimulatorComponent implements OnInit {
       ]
     };
     
+    /*if (this.Task.title.length > 45)
+      documentDefinition.content[6].fontSize = 16;*/
+
     if (this.Task.title.length > 45)
-      documentDefinition.content[6].fontSize = 15;
-    
+      documentDefinition.content[6].fontSize = 15;  
+    //pdfMake.createPdf(documentDefinition).open({}, window);
+    //pdfMake.createPdf(documentDefinition).open();
     pdfMake.createPdf(documentDefinition).download();
   }
 

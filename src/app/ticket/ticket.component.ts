@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { QDataService } from 'src/app/services/Qdata.service';
 import { ActivatedRoute } from "@angular/router";
 import * as pdfMake from 'pdfmake/build/pdfmake';
-import * as pdfFonts from 'pdfmake/build/vfs_fonts';
+import * as pdfFonts from 'src/app/simulator/vfs_fonts';
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 @Component({
