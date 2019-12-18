@@ -76,33 +76,23 @@ export class QDataService {
             category : 'Learning Something New'
         },
         {
-            title : 'Did you know that thanks to 3D printing, NASA can basically “email” tools to astronauts?',
+            title : 'Did you know that the American flag was designed by a high school student?',
             hashtag : '#DIDYOUKNOW',
             category : 'Learning Something New'
         },
         {
-            title : 'Did you know that Abraham Lincoln was a bartender?',
-            hashtag : '#DIDYOUKNOW',
-            category : 'Learning Something New'
-        },
-        {
-            title : "Did you know that the entire world's population could fit inside Los Angeles?",
+            title : 'Did you know thet the first oranges weren’t orange but green?',
             hashtag : '#DIDYOUKNOW',
             category : 'Learning Something New'
         },
 
         {
-            title : 'Think about a word and make someone guessing it',
+            title : 'Play the hanged the winner will get a coffee by the user',
             hashtag : '#BETACOFFEE',
             category : 'Playing A Game'
         },
         {
             title : 'Guess the numeric sequence 2 3 _  13 Choose between 6 7 10 11',
-            hashtag : '#BETACOFFEE',
-            category : 'Playing A Game'
-        },
-        {
-            title : 'Play Tic Tac Toe',
             hashtag : '#BETACOFFEE',
             category : 'Playing A Game'
         },

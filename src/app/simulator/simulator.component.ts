@@ -99,7 +99,7 @@ export class SimulatorComponent implements OnInit {
             margin: [0, 30]
           },
           {
-            text: "@User-test",
+            text: "@RCI-BANK",
             //fontSize: 13,
             fontSize: 11,
             alignment: 'center',
